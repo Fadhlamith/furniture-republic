@@ -1,258 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 <head>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-  <meta charset="UTF-8" />
-<meta name="description" content="Furniture Republic - High-quality, custom furniture for your Living Place.">
-  <title>Furniture Republic</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Furniture Republic - Sri Lanka</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+  /* WhatsApp Buttons */
+  .whatsapp-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+  }
+  .wa-icon {
+    width: 50px;
+    height: 50px;
     }
 
-    /* WhatsApp Buttons */
-    .whatsapp-buttons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 100;
+  /* Header */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
     }
 
-    .wa-icon {
-      width: 50px;
-      height: 50px;
+  header h1 {
+    margin: 0;
+  }
+  header p {
+    margin: 5px 0 0;
     }
 
-    /* Header */
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
+  /* Navigation */
+  nav {
+    background-color: #444;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+  }
+  nav ul li:hover {
+    background-color: #555;
     }
 
-    header h1 {
-      margin: 0;
+  /* Submenu - hidden by default */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #85929e;
+    min-width: 150px;
+    z-index: 10;
+    border-radius: 4px;
+  }
+  nav ul li:hover > ul {
+    display: block;
+  }
+  nav ul li ul li {
+    width: 100%;
+  }
+  nav ul li ul li a {
+    padding: 10px;
     }
 
-    header p {
-      margin: 5px 0 0;
+  /* Hero */
+  .hero {
+    background: url('https://via.placeholder.com/1600x600?text=Furniture+Banner') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .hero p {
+    font-size: 20px;
     }
 
-    /* Navbar */
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 10px;
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+  /* Sections */
+  section {
+    padding: 40px 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 32px;}
+
+  /* Gallery */
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gallery-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    .navbar ul li {
-      position: relative;
-      margin: 0 15px;
-    }
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
 
-    .navbar ul li a {
-      color: white;
-      font-weight: bold;
-    }
-
-    .navbar ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .navbar ul li ul {
-      display: none;
-      position: absolute;
-      background-color: #85929e;
-      top: 35px;
-      left: 0;
-      min-width: 150px;
-      z-index: 10;
-    }
-
-    .navbar ul li:hover ul {
-      display: block;
-    }
-
-    .navbar ul li ul li {
-      padding: 10px;
-    }
-
-    .navbar ul li ul li a {
-      color: rgba(77, 22, 22, 0.747);
-    }
-
-    .navbar ul li ul li a:hover {
-      background-color: #555;
-    }
-
-    /* Hero Banner */
-    .hero {
-      background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
-      color: white;
-      height: 350px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-    }
-
-    .hero h2 {
-      font-size: 40px;
-      margin: 0;
-    }
-
-    .hero p {
-      font-size: 20px;
-    }
-
-    /* Gallery */
-    .gallery {
-      padding: 40px 20px;
-      background-color: #f8f8f8;
-      text-align: center;
-    }
-
-    .gallery-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .gallery-grid img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      .hero h2 { font-size: 28px; }
-      .hero p { font-size: 16px; }
-    }
+  /* Responsive */
+  @media(max-width: 600px) {
+    .hero h2 { font-size: 28px; }
+    .hero p { font-size: 16px; }
+    .gallery-grid { flex-direction: column; align-items: center; }
+  }
   </style>
 </head>
 <body>
 
-  <!-- WhatsApp Chat Buttons -->
-  <div class="whatsapp-buttons">
-    <a href="https://wa.me/94764408267" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp 1" class="wa-icon" />
-    </a>
-    <a href="https://wa.me/94719463914" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp 2" class="wa-icon" />
-    </a>
+<!-- WhatsApp Buttons -->
+<div class="whatsapp-buttons">
+  <a href="https://wa.me/94764408267" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp 1" class="wa-icon" />
+  </a>
+  <a href="https://wa.me/94719463914" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp 2" class="wa-icon" />
+  </a>
   </div>
 
-  <!-- Header -->
-  <header>
-    <h1>Furniture Republic</h1>
-    <p>Elegant Interiors & Custom Furniture</p>
+<!-- Header -->
+<header>
+  <h1>Furniture Republic</h1>
+  <p>Elegant Interiors & Custom Furniture in Sri Lanka</p>
   </header>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li>
-        <a href="#">Living Room ▼</a>
-        <ul>
-          <li><a href="#">Sofa</a></li>
-          <li><a href="#">Coffee Table</a></li>
-          <li><a href="#">Accent Chair</a></li>
-          <li><a href="#">Ottoman</a></li>
-          <li><a href="#">TV Console</a></li>
-          <li><a href="#">Shoe Cabinet</a></li>
-          <li><a href="#">Side Table</a></li>
-          <li><a href="#">Bookshelf</a></li>
-          <li><a href="#">Rug</a></li>
-
-        </ul>
-      </li>
-      <li>
-        <a href="#">Dining Room ▼</a>
-        <ul>
-          <li><a href="#">Dining Table</a></li>
-          <li><a href="#">Dining Chair</a></li>
-          <li><a href="#">Buffet Cabinet</a></li>
-          <li><a href="#">Bar Stool</a></li>
-          <li><a href="#">Credenza</a></li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="#">Bedroom ▼</a>
-        <ul>
-          <li><a href="#">Bed Frame</a></li>
-          <li><a href="#">Wardrobe</a></li>
-          <li><a href="#">Dresser</a></li>
-          <li><a href="#">Nightstand</a></li>
-          <li><a href="#">Bedding</a></li>
-        </ul> 
-      </li>                                             
-      <li>
-        <a href="#">Kitchen pantry cupboard ▼</a>
-        <ul>
-          <li><a href="#">Mahogany Pantry Cupboard</a></li>
-          <li><a href="#">Teak Pantry Cupboard</a></li>
-          <li><a href="#">Aluminum Pantry Cupboard</a></li>
-          <li><a href="#">Eco Board Pantry Cupboard</a></li>
-          <li><a href="#">Melamine Pantry Cupboard</a></li>
-          <li><a href="#">Agk Board Pantry Cupboard</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Light and Decor</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
+<!-- Navigation Menu -->
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Living Room ▼</a>
+      <ul>
+        <li><a href="#living-coffee">Coffee Table</a></li>
+        <li><a href="#living-sofa">Sofa</a></li>
+        <li><a href="#living-chair">Accent Chair</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Dining Room ▼</a>
+      <ul>
+        <li><a href="#dining-table">Dining Table</a></li>
+        <li><a href="#dining-chair">Dining Chair</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Bedroom ▼</a>
+      <ul>
+        <li><a href="#bed-bed">Bed Frame</a></li>
+        <li><a href="#bed-wardrobe">Wardrobe</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>We Make Spaces Beautiful</h2>
-    <p>Crafted furniture that fits your life</p>
+<!-- Hero Banner -->
+<section class="hero">
+  <h2>Transform Your Space</h2>
+  <p>Custom furniture crafted for your home in Sri Lanka</p>
+</section>
+
+<!-- Sections for each category -->
+<section id="living-coffee">
+  <h2>Living Room - Coffee Table</h2>
+  <p>Details about the coffee tables...</p>
+  <!-- You can add images or products here -->
+</section>
+
+<section id="living-sofa">
+  <h2>Living Room - Sofa</h2>
+  <p>Details about sofas...</p>
+</section>
+
+<section id="living-chair">
+  <h2>Living Room - Accent Chair</h2>
+  <p>Details about accent chairs...</p>
+</section>
+
+<section id="dining-table">
+  <h2>Dining Room - Dining Table</h2>
+  <p>Details about dining tables...</p>
+</section>
+
+<section id="dining-chair">
+  <h2>Dining Room - Dining Chair</h2>
+  <p>Details about dining chairs...</p>
+</section>
+
+<section id="bed-bed">
+  <h2>Bedroom - Bed Frame</h2>
+  <p>Details about bed frames...</p>
+</section>
+
+<section id="bed-wardrobe">
+  <h2>Bedroom - Wardrobe</h2>
+  <p>Details about wardrobes...</p>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery-grid">
-      <img src="images/sofa.jpeg" alt="Sofa Set" />
-      <img src="images/dining.jpg.jpg" alt="Dining Table" />
-      <img src="images/tv.jpg.jpg" alt="TV Unit" />
-      <img src="images/light-and-decor.jpg.jpg" alt="Light and Decor" />
-    </div>
+<!-- Gallery -->
+<section class="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery-grid">
+    <img src="https://via.placeholder.com/300x200?text=Sofa" alt="Sofa" />
+    <img src="https://via.placeholder.com/300x200?text=Dining" alt="Dining" />
+    <img src="https://via.placeholder.com/300x200?text=TV Unit" alt="TV Unit" />
+    <img src="https://via.placeholder.com/300x200?text=Decor" alt="Decor" />
+  </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Furniture Republic. All rights reserved.</p>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Furniture Republic - Sri Lanka. All rights reserved.</p>
   </footer>
 
 </body>
-</html>
+  </html>

@@ -5,1055 +5,203 @@
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org); Commerce 2" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="/sites/default/files/small-logo.jpg" type="image/jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniture Republic Sri Lanka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    <title>Home | Furniture Republic</title>
-    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_GvumAfE1GP-Djj1a3fczgv_NNyasoRX1vi8KDSLb1lA.css?delta=0&amp;language=en&amp;theme=furniture&amp;include=eJxlkFFywyAMRC-EzVfPkxEgHBwBriSaktPHsT2ZuP3ZeauVGCHpopitA0HjalVRhuXrn88oAhOK8ZXRlsoZKD3OI28cZhkIFEU_84mqAxpEO6Uymdi4JG3ra2-6_Gn5SXgXu-mYa2iEJvZgfROt-SII7K_7QqkocgEa5--G3Me4Lrgngduy1mGGX-MIHt1uejBVCAculXpMRIf1BCKUXl_YY645vW6yOYZ40B3dYtZGf7Objl7k5PWKGU-VDKmMASM00ieKfJQE" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_GYdRvSAkR8AUmAYN1qskAqNN0nkLdGEneb7QpmE06TM.css?delta=1&amp;language=en&amp;theme=furniture&amp;include=eJxlkFFywyAMRC-EzVfPkxEgHBwBriSaktPHsT2ZuP3ZeauVGCHpopitA0HjalVRhuXrn88oAhOK8ZXRlsoZKD3OI28cZhkIFEU_84mqAxpEO6Uymdi4JG3ra2-6_Gn5SXgXu-mYa2iEJvZgfROt-SII7K_7QqkocgEa5--G3Me4Lrgngduy1mGGX-MIHt1uejBVCAculXpMRIf1BCKUXl_YY645vW6yOYZ40B3dYtZGf7Objl7k5PWKGU-VDKmMASM00ieKfJQE" />
+    .whatsapp-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 100;
+    }
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <script src="/themes/contrib/furniture/js/js-image-zoom-master/package/js-image-zoom.js"></script>
-    <!-- Or from a CDN -->
-    <script src="https://unpkg.com/js-image-zoom/js-image-zoom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+    .wa-icon {
+      width: 50px;
+      height: 50px;
+    }
 
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-  </head>
-  <body class="path-frontpage">
+    nav {
+      background-color: #222;
+    }
 
-    
-      <div class="dialog-off-canvas-main-canvas d-flex flex-column h-100" data-off-canvas-main-canvas>
-    
-<div id="top-menu">
-    <div class="tm-wrapper">
-                <div id="tm-left">
-              <div class="region region-top-menu-left">
-    <div class="views-element-container block block-views block-views-blockmc-bv-announcement-block-1" id="block-furniture-views-block-mc-bv-announcement-block-1">
-  
-    
-      <div data-block="top_menu_left"><div class="view view-mc-bv-announcement view-id-mc_bv_announcement view-display-id-block_1 js-view-dom-id-2e4c48c566ba3cfc51bf736db984c4153db1d9590ec12f1e303888c96913e65a">
-  
-    
-      
-      <div class="view-content">
-          <div class="announcement"><a href="https://www.facebook.com/@FurnitureRepublicPH"><p>STYLISH LIVING STARTS HERE.</p><p>Visit our Showrooms for great savings!</p></a></div>
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-    </div>
-  
-          </div>
-</div>
+    nav ul li {
+      margin: 0 15px;
+      position: relative;
+    }
 
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      top: 35px;
+      left: 0;
+      min-width: 160px;
+      z-index: 10;
+      flex-direction: column;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      padding: 10px;
+    }
+
+    nav ul li ul li a {
+      color: white;
+    }
+
+    .hero {
+      background-color: #eee;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .gallery {
+      padding: 40px;
+      background: #f8f8f8;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WhatsApp Chat Buttons -->
+  <div class="whatsapp-buttons">
+    <a href="https://wa.me/94764408267" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="wa-icon" />
+    </a>
+    <a href="https://wa.me/94719463914" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="wa-icon" />
+    </a>
   </div>
 
-  </div>
+  <!-- Header -->
+  <header>
+    <h1>Furniture Republic</h1>
+    <p>Elegant Interiors & Custom Furniture</p>
+  </header>
 
-        </div>
-                
-            </div>
-</div>
-
-
-
-          <header id="navbar" role="banner">
-              <div class="container">
-            <div class="navbar-header">
-                                  
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-        <div id="navbar-collapse" class="navbar-collapse collapse">
-              <div class="region region-navigation">
-    <div id="block-furniture-site-branding" class="block block-system block-system-branding-block">
-  
-    
-  <div class="navbar-brand d-flex align-items-center">
-
-    <a href="/" title="Home" rel="home" class="site-logo d-block">
-    <img src="/sites/default/files/Furniture%20Republic%20logo%20%28white%29.png" alt="Home" fetchpriority="high" />
-  </a>
-  
-  <div>
-    
-      </div>
-</div>
-</div>
-<nav role="navigation" aria-labelledby="block-furniture-main-menu-menu" id="block-furniture-main-menu" class="block block-menu navigation menu--main">
-            
-  <h5 class="visually-hidden" id="block-furniture-main-menu-menu">Main navigation</h5>
-  
-
-        
-            <ul data-block="navigation" class="navbar-nav justify-content-end flex-wrap nav-level-0">
-                    <li class="nav-item">
-          <a href="/" class="nav-link is-active" data-drupal-link-system-path="&lt;front&gt;">Home</a>
-      </li>
-
-                    <li class="nav-item dropdown">
-          <a href="/products/category/living-room" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Expand menu Living Room" data-drupal-link-system-path="products/category/living-room">Living Room</a>
-                  <ul data-block="navigation" class="dropdown-menu nav-level-1">
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=25" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;25&quot;}" data-drupal-link-system-path="products/category">Accent Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=18" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;18&quot;}" data-drupal-link-system-path="products/category">Center Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=21" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;21&quot;}" data-drupal-link-system-path="products/category">Console Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=32" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;32&quot;}" data-drupal-link-system-path="products/category">Display Shelf</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=23" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;23&quot;}" data-drupal-link-system-path="products/category">Entertainment Center</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=28" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;28&quot;}" data-drupal-link-system-path="products/category">Leisure Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=27" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;27&quot;}" data-drupal-link-system-path="products/category">Ottoman</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=29" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;29&quot;}" data-drupal-link-system-path="products/category">Recliner Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=24" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;24&quot;}" data-drupal-link-system-path="products/category">Shoe Cabinet</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=19" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;19&quot;}" data-drupal-link-system-path="products/category">Side Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=20" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;20&quot;}" data-drupal-link-system-path="products/category">Smart Side Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=31" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;31&quot;}" data-drupal-link-system-path="products/category">Sofa Bed</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=30" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;30&quot;}" data-drupal-link-system-path="products/category">Sofa</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=26" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;26&quot;}" data-drupal-link-system-path="products/category">Stool</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=22" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;22&quot;}" data-drupal-link-system-path="products/category">TV Stand</a>
-      </li>
-
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Living Room ▼</a>
+        <ul>
+          <li><a href="#">Sofa</a></li>
+          <li><a href="#">Coffee Table</a></li>
+          <li><a href="#">Accent Chair</a></li>
         </ul>
-  
       </li>
-
-                    <li class="nav-item dropdown">
-          <a href="/products/category/dining-room" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Expand menu Dining Room" data-drupal-link-system-path="products/category/dining-room">Dining Room</a>
-                  <ul data-block="navigation" class="dropdown-menu nav-level-1">
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=34" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;34&quot;}" data-drupal-link-system-path="products/category">Bar Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=41" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;41&quot;}" data-drupal-link-system-path="products/category">Buffet Cabinet</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=33" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;33&quot;}" data-drupal-link-system-path="products/category">Dining Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=40" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;40&quot;}" data-drupal-link-system-path="products/category">Dining Set</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=38" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;38&quot;}" data-drupal-link-system-path="products/category">Dining Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=37" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;37&quot;}" data-drupal-link-system-path="products/category">Industrial Bench</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=35" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;35&quot;}" data-drupal-link-system-path="products/category">Industrial Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=36" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;36&quot;}" data-drupal-link-system-path="products/category">Industrial Stool</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=39" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;39&quot;}" data-drupal-link-system-path="products/category">Industrial Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=42" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;42&quot;}" data-drupal-link-system-path="products/category">Wine Cabinet</a>
-      </li>
-
+      <li><a href="#">Dining Room ▼</a>
+        <ul>
+          <li><a href="#">Dining Table</a></li>
+          <li><a href="#">Dining Chair</a></li>
         </ul>
-  
       </li>
-
-                    <li class="nav-item dropdown">
-          <a href="/products/category/bed-room" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Expand menu Bedroom" data-drupal-link-system-path="products/category/bed-room">Bedroom</a>
-                  <ul data-block="navigation" class="dropdown-menu nav-level-1">
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=11" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;11&quot;}" data-drupal-link-system-path="products/category">Bed</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=12" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;12&quot;}" data-drupal-link-system-path="products/category">Bed Bench</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=58" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;58&quot;}" data-drupal-link-system-path="products/category">Chest Drawer</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=13" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;13&quot;}" data-drupal-link-system-path="products/category">Dresser Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=62" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;62&quot;}" data-drupal-link-system-path="products/category">Mattress</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=14" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;14&quot;}" data-drupal-link-system-path="products/category">Night Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=15" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;15&quot;}" data-drupal-link-system-path="products/category">Smart Night Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=17" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;17&quot;}" data-drupal-link-system-path="products/category">Throw Pillow</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=16" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;16&quot;}" data-drupal-link-system-path="products/category">Wardrobe</a>
-      </li>
-
+      <li><a href="#">Bedroom ▼</a>
+        <ul>
+          <li><a href="#">Bed Frame</a></li>
+          <li><a href="#">Wardrobe</a></li>
         </ul>
-  
       </li>
-
-                    <li class="nav-item dropdown">
-          <a href="/products/category/office" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Expand menu Office" data-drupal-link-system-path="products/category/office">Office</a>
-                  <ul data-block="navigation" class="dropdown-menu nav-level-1">
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=43" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;43&quot;}" data-drupal-link-system-path="products/category">Conference Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=44" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;44&quot;}" data-drupal-link-system-path="products/category">Display Cabinet</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=45" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;45&quot;}" data-drupal-link-system-path="products/category">Ergonomic Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=46" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;46&quot;}" data-drupal-link-system-path="products/category">Executive Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=47" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;47&quot;}" data-drupal-link-system-path="products/category">Floor Cabinet</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=48" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;48&quot;}" data-drupal-link-system-path="products/category">Manager&#039;s Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=49" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;49&quot;}" data-drupal-link-system-path="products/category">Office Chair</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=50" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;50&quot;}" data-drupal-link-system-path="products/category">Office Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=51" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;51&quot;}" data-drupal-link-system-path="products/category">Pedestal</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=52" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;52&quot;}" data-drupal-link-system-path="products/category">Reception Table</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=53" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;53&quot;}" data-drupal-link-system-path="products/category">Workstation</a>
-      </li>
-
+      <li><a href="#">Kitchen ▼</a>
+        <ul>
+          <li><a href="#">Mahogany Cupboard</a></li>
+          <li><a href="#">Teak Cupboard</a></li>
         </ul>
-  
       </li>
-
-                    <li class="nav-item dropdown">
-          <a href="/products/category/decors-and-lighting" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Expand menu Lighting &amp; Décor" data-drupal-link-system-path="products/category/decors-and-lighting">Lighting &amp; Décor</a>
-                  <ul data-block="navigation" class="dropdown-menu nav-level-1">
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=55" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;55&quot;}" data-drupal-link-system-path="products/category">Glass Decor</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=63" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;63&quot;}" data-drupal-link-system-path="products/category">Painting</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=57" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;57&quot;}" data-drupal-link-system-path="products/category">Table Lamp</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category?field_product_subcategory_target_id=56" class="dropdown-item" data-drupal-link-query="{&quot;field_product_subcategory_target_id&quot;:&quot;56&quot;}" data-drupal-link-system-path="products/category">Vases</a>
-      </li>
-
-        </ul>
-  
-      </li>
-
-                    <li class="nav-item">
-          <a href="/products/category/outdoor" class="nav-link" data-drupal-link-system-path="products/category/outdoor">Outdoor</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/store-locator/showroom" class="nav-link" data-drupal-link-system-path="store-locator/showroom">Showrooms</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/contact-us" class="nav-link" data-drupal-link-system-path="contact-us">Contact Us</a>
-      </li>
-
-                    <li class="nav-item">
-          <a href="/online-catalog" class="nav-link" data-drupal-link-system-path="node/78">Online Catalog</a>
-      </li>
-
-        </ul>
-  
-
-
-
-  </nav>
-<div class="views-element-container block block-views block-views-blockm-vb-social-media-block-1" id="block-furniture-views-block-m-vb-social-media-block-1">
-  
-    
-      <div data-block="navigation"><div class="view view-m-vb-social-media view-id-m_vb_social_media view-display-id-block_1 js-view-dom-id-11a380c7d2034412bf41f3f008df9cfa10ae7665986a5d157abc47633bd67e9b">
-  
-    
-      
-      <div class="view-content">
-          <div class="socmed"><a href="https://www.facebook.com/@FurnitureRepublic" target="blank_"><i class="fa-brands fa-facebook"></i></a></div>
-    <div class="socmed"><a href="https://www.instagram.com/furniturerepublic/" target="blank_"><i class="fa-brands fa-instagram"></i></a></div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-
-  </div>
-
-        </div>
-                          
-              </div>
-
-                  
-                    <div class="search"><a class="inactive"><img src="/sites/default/files/icons/icons-search-white.png"></a></div>
-            <form class="custom-search-form" data-drupal-selector="custom-search-form" action="/" method="post" id="custom-search-form" accept-charset="UTF-8">
-  <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-search-query form-item-search-query">
-      <label for="edit-search-query">Search</label>
-        
-  <input class="custom-ajax-search form-text form-control" data-drupal-selector="edit-search-query" type="text" id="edit-search-query" name="search_query" value="" size="60" maxlength="128" placeholder="Enter search terms..." />
-
-
-        </div>
-<div id="search-details-wrapper" data-drupal-selector="edit-search-details" class="js-form-wrapper form-wrapper"><div class="search-details"></div></div>
-<div class="form-action"><i class="fa fa-search"></i>
-    <input class="search-icon-button button js-form-submit form-submit btn btn-primary" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" />
-
-</div>
-  <input autocomplete="off" data-drupal-selector="form-ov0hyb-pq7oi2z3gjuiyehmdlz1qrubxqurxhgonlsc" type="hidden" name="form_build_id" value="form-ov0HYB_Pq7OI2Z3gJuiyEhMDlZ1QrubXqurxHgOnLSc" />
-
-
-  <input data-drupal-selector="edit-custom-search-form" type="hidden" name="form_id" value="custom_search_form" />
-
-
-</form>
-
-        
-
-              </div>
-          </header>
-  
-
-
-        <div id="banner" class="banner">
-        <div class="banner-wrapper">
-              <div class="region region-banner">
-    <div class="views-element-container block block-views block-views-blockmc-bv-home-banner-block-1" id="block-furniture-views-block-mc-bv-home-banner-block-1">
-  
-    
-      <div data-block="banner"><div class="view view-mc-bv-home-banner view-id-mc_bv_home_banner view-display-id-block_1 js-view-dom-id-a0fa95bf17f3b4bf2e094ae687b28b9472f3e46061a9e58939bbd0b390b1bf83">
-  
-    
-      
-      <div class="view-content">
-      <div class="slick blazy slick--view slick--view--mc-bv-home-banner slick--view--mc-bv-home-banner--block-1 slick--view--mc-bv-home-banner-block-block-1 is-b-captioned slick--skin--default slick--optionset--home-banner" data-blazy=""><div id="slick-4d30438f26a" data-slick="{&quot;count&quot;:8,&quot;total&quot;:8,&quot;autoplay&quot;:true,&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;draggable&quot;:false,&quot;fade&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;}" class="slick__slider">  <div class="slick__slide slide slide--0"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/1.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--1"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/2%20%281%29.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--2"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/3.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--3"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/4.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--4"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/5.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--5"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/6_0.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--6"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/7.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--7"><div class="wrpaper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/banner/8.jpg" width="1800" height="600" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-</div>
-          <nav role="navigation" class="slick__arrow">
-        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button><button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
-      </nav>
-    </div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-
-  </div>
-
-        </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div role="main" class="main-container container js-quickedit-main-content">
-    <div class="row">
-
-            
-      <div class="main-content-section">
-            
-                  <section class="col-sm-12">
-
-                                      <div class="highlighted">  <div class="region region-highlighted">
-    <div data-drupal-messages-fallback class="hidden"></div>
-
-  </div>
-</div>
-                  
-                
-                          <a id="main-content"></a>
-            <div class="region region-content">
-    <div class="views-element-container block block-views block-views-blockmc-bv-introduction-block-1" id="block-furniture-views-block-mc-bv-introduction-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-introduction view-id-mc_bv_introduction view-display-id-block_1 js-view-dom-id-aac24cf553a61ea0ce6608349dba8fd50fabf4772ace6f32196e696f9c20e26c">
-  
-    
-      
-      <div class="view-content">
-          <div class="intro"><div class="wrapper">
-	<div class="left">
-		<div class="title">COME HOME TO </div>
-		<div class="sub-title">STYLISH LIVING</div>
-	</div>
-	<div class="right">
-		<div class="desc"><p>Your home is a haven that greets you as you wake and welcomes you at the end of each day. &nbsp;<br>Turn your space into a sanctuary with thoughtfully curated pieces that define the look of each room.&nbsp;</p><p><strong>Furniture Republic’s wide selection of furniture enables you to transform any space&nbsp;</strong><br><strong>into an expression of your lifestyle. &nbsp;</strong></p></div>
-	</div>
-</div></div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div class="views-element-container block block-views block-views-blockmc-bv-shop-by-category-block-1" id="block-furniture-views-block-mc-bv-shop-by-category-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-shop-by-category view-id-mc_bv_shop_by_category view-display-id-block_1 js-view-dom-id-cc3e4c02bda85b103da0acd6c9ed3c02d12ef7e4008dc782d38ae22f5444c949">
-  
-    
-      <div class="view-header">
-      <div class="header">Shop By Category</div>
-    </div>
-      
-      <div class="view-content">
-      <div class="slick blazy slick--view slick--view--mc-bv-shop-by-category slick--view--mc-bv-shop-by-category--block-1 slick--view--mc-bv-shop-by-category-block-block-1 is-b-captioned slick--skin--default slick--optionset--shop-by-category slick--multiple-view" data-blazy=""><div id="slick-9e8ec66b5a1" data-slick="{&quot;count&quot;:6,&quot;total&quot;:6,&quot;autoplay&quot;:true,&quot;arrows&quot;:false,&quot;centerMode&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;,&quot;slidesToShow&quot;:3,&quot;responsive&quot;:[{&quot;breakpoint&quot;:600,&quot;settings&quot;:{&quot;autoplay&quot;:true,&quot;pauseOnHover&quot;:false,&quot;pauseOnFocus&quot;:false,&quot;arrows&quot;:false,&quot;centerMode&quot;:true,&quot;draggable&quot;:false,&quot;touchMove&quot;:false,&quot;waitForAnimate&quot;:false}}]}" class="slick__slider">  <div class="slick__slide slide slide--0"><div class="wrapper">
-<div class="image"><a href="/products/category/living-room">  <img loading="lazy" src="/sites/default/files/product%20category/Living%201_0.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</a></div>
-<div class="title">Living Room</div>
-</div></div>
-  <div class="slick__slide slide slide--1"><div class="wrapper">
-<div class="image"><a href="/products/category/dining-room">  <img loading="lazy" src="/sites/default/files/product%20category/Dining%201.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</a></div>
-<div class="title">Dining Room</div>
-</div></div>
-  <div class="slick__slide slide slide--2"><div class="wrapper">
-<div class="image"><a href="/products/category/bed-room">  <img loading="lazy" src="/sites/default/files/product%20category/Bedroom%201.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</a></div>
-<div class="title">Bedroom</div>
-</div></div>
-  <div class="slick__slide slide slide--3"><div class="wrapper">
-<div class="image"><a href="">  <img loading="lazy" src="/sites/default/files/product%20category/Outdoor%201.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</a></div>
-<div class="title">Outdoor</div>
-</div></div>
-  <div class="slick__slide slide slide--4"><div class="wrapper">
-<div class="image"><a href="/products/category/office">  <img loading="lazy" src="/sites/default/files/product%20category/Office%201.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</a></div>
-<div class="title">Office</div>
-</div></div>
-  <div class="slick__slide slide slide--5"><div class="wrapper">
-<div class="image"><a href="/products/category/decors-and-lighting">  <img loading="lazy" src="/sites/default/files/product%20category/vase%202.jpg" width="380" height="240" alt="" class="img-fluid" />
-
-</a></div>
-<div class="title">Lighting and Decor</div>
-</div></div>
-</div>
-          <nav role="navigation" class="slick__arrow">
-        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button><button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
-      </nav>
-    </div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div class="views-element-container block block-views block-views-blockmc-bv-design-inspirations-block-1" id="block-furniture-views-block-mc-bv-design-inspirations-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-design-inspirations view-id-mc_bv_design_inspirations view-display-id-block_1 js-view-dom-id-9daa746298e47d1b7bb757b01df4978e5126b63a9cdf1672ddb146331e0255ec">
-  
-    
-      <div class="view-header">
-      <div class="left">
-<div class="header">Design</div>
-<div class="sub-header">Inspirations</div>
-</div>
-<div class="right">
-<div class="header-desc">Define your style and bring your dream space to life with our curated design inspirations.</div>
-</div>
-    </div>
-      
-      <div class="view-content">
-          <div class="design"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/design%20inspirations/Bedroom%202_2.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-    <div class="design"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/design%20inspirations/Dining%202.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-    <div class="design"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/design%20inspirations/Living%202_1.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-    <div class="design"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/design%20inspirations/Office%202_1.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-    <div class="design"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/design%20inspirations/Outdoor%202_0.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div class="views-element-container block block-views block-views-blockmc-bv-new-arrival-block-1" id="block-furniture-views-block-mc-bv-new-arrival-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-new-arrival view-id-mc_bv_new_arrival view-display-id-block_1 js-view-dom-id-d60bc0c6c253072f8bdb7cdf8182149aceb24a4414f52816e08b81f6051d0123">
-  
-    
-      <div class="view-header">
-      <div class="view view-tt-bv-new-arrival-description view-id-tt_bv_new_arrival_description view-display-id-block_1 js-view-dom-id-a4d9d3d6e58b46eb113291e24283705cd6da0b8feeba11b6978add21458d12f5">
-  
-    
-      
-      <div class="view-content">
-          <div class="new-arrival"><div class="title">New Arrivals</div>
-<div class="desc"><p>Browse through our latest selections and find the perfect piece that will transform your home into a welcoming sanctuary.&nbsp;</p></div></div>
-
-    </div>
-  
-          </div>
-
-    </div>
-      
-      <div class="view-content">
-      <div class="slick blazy slick--view slick--view--mc-bv-new-arrival slick--view--mc-bv-new-arrival--block-1 slick--view--mc-bv-new-arrival-block-block-1 is-b-captioned slick--skin--default slick--optionset--slider-1-dots" data-blazy=""><div id="slick-00d9e47f4db" data-slick="{&quot;count&quot;:8,&quot;total&quot;:8,&quot;autoplay&quot;:true,&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;draggable&quot;:false,&quot;lazyLoad&quot;:&quot;blazy&quot;}" class="slick__slider">  <div class="slick__slide slide slide--0"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/100709%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--1"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/201251%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--2"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/600091%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--3"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/520032%20%284%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--4"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/205176%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--5"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/301223%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--6"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/304271%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-  <div class="slick__slide slide slide--7"><div class="wrapper">
-<div class="image">  <img loading="lazy" src="/sites/default/files/products/208135%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-
-</div>
-</div></div>
-</div>
-          <nav role="navigation" class="slick__arrow">
-        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button><button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
-      </nav>
-    </div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div class="views-element-container block block-views block-views-blockmc-bv-home-products-block-1" id="block-furniture-views-block-mc-bv-home-products-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-home-products view-id-mc_bv_home_products view-display-id-block_1 js-view-dom-id-a079d4cabf2f667d3268e1e5ca86a3f88010cdbfe2f545416000235711246341">
-  
-    
-      <div class="view-header">
-      <div class="header">Products that speaks your style</div>
-<div class="header-desc">Let your space tell your story.  Find the best fit for any design inspiration
- from our wide range of furniture selections. </div>
-    </div>
-      
-      <div class="view-content">
-          <div class="product"><div class="wrapper">
-<div class="image">  <a href="/product/fr-nolan-full-leather-bed-100591?v=4764" hreflang="en"><img loading="lazy" src="/sites/default/files/products/100591%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="title"><a href="/product/fr-nolan-full-leather-bed-100591-36" hreflang="en">FR Nolan Full Leather Bed 100591</a></div>
-</div></div>
-    <div class="product"><div class="wrapper">
-<div class="image">  <a href="/product/fr-extendable-dining-table-301021?v=1367" hreflang="en"><img loading="lazy" src="/sites/default/files/products/301021%20%281%29.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="title"><a href="/product/fr-extendable-dining-table-301021" hreflang="en">FR Extendable Dining Table 301021</a></div>
-</div></div>
-    <div class="product"><div class="wrapper">
-<div class="image">  <a href="/product/fr-polyresin-pot-white-605267?v=5162" hreflang="en"><img loading="lazy" src="/sites/default/files/products/605267%20%281%29_0.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="title"><a href="/product/fr-polyresin-pot-white-605267" hreflang="en">FR Polyresin Pot White 605267</a></div>
-</div></div>
-    <div class="product"><div class="wrapper">
-<div class="image">  <a href="/product/fr-cy77-wooden-bed-led-101077?v=867" hreflang="en"><img loading="lazy" src="/sites/default/files/products/101077%20%20%281%29.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="title"><a href="/product/fr-cy77-wooden-bed-led-101077" hreflang="en">FR Cy77 Wooden Bed with LED 101077</a></div>
-</div></div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div id="block-furniture-content" class="block block-system block-system-main-block">
-  
-    
-      <div class="views-element-container"><div class="view view-frontpage view-id-frontpage view-display-id-page_1 js-view-dom-id-bc06314db1613a2beff5cc1a28fb7e14343f6a84a3fd50e102adb42c9ed7c2c1">
-  
-    
-      
-  
-      
-          </div>
-</div>
-
-  </div>
-<div class="views-element-container block block-views block-views-blockmc-bv-promotion-block-1" id="block-furniture-views-block-mc-bv-promotion-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-promotion view-id-mc_bv_promotion view-display-id-block_1 js-view-dom-id-828e2835ef1f2055881c53d4091c831c4ec49773a02c58692a539b84f8c2ef74">
-  
-    
-      
-      <div class="view-content">
-          <div class="promotion"><div class="wrapper">
-<div class="image">  <a href="/promotion/eliminate-guesswork-and-leave-heavy-lifting-us-our-team-will-assemble-and-fully-set-your" hreflang="en"><img loading="lazy" src="/sites/default/files/promotion/FREE%20ASSEMBLY_0.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="title">Eliminate the guesswork and leave the heavy lifting to us! Our team will assemble and fully set up your items for FREE within 7 days of delivery!</div>
-<div class="desc">Our Assembly Service includes these steps:&nbsp;</div>
-<div class="link"><a href="/promotion/eliminate-guesswork-and-leave-heavy-lifting-us-our-team-will-assemble-and-fully-set-your" hreflang="en">Know more</a></div>
-</div></div>
-    <div class="promotion"><div class="wrapper">
-<div class="image">  <a href="/promotion/shop-vip" hreflang="en"><img loading="lazy" src="/sites/default/files/promotion/VIP%20CARD_0.jpg" width="2000" height="2000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="title">Shop like a VIP!</div>
-<div class="desc">Earn points and get access to exclusive perks with the Furniture Republic VIP Card.  </div>
-<div class="link"><a href="/promotion/shop-vip" hreflang="en">Know more</a></div>
-</div></div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div class="views-element-container block block-views block-views-blockmc-bv-blogs-block-1" id="block-furniture-views-block-mc-bv-blogs-block-1">
-  
-    
-      <div data-block="content"><div class="view view-mc-bv-blogs view-id-mc_bv_blogs view-display-id-block_1 js-view-dom-id-7dd77d70d0a99d1f0af93af03b60686d2599a5f6b7257f5c5bb9f530b952ec37">
-  
-    
-      
-      <div class="view-content">
-      <div class="slick blazy slick--view slick--view--mc-bv-blogs slick--view--mc-bv-blogs--block-1 slick--view--mc-bv-blogs-block-block-1 is-b-captioned slick--skin--default slick--optionset--blogs slick--multiple-view" data-blazy=""><div id="slick-469edc48cb9" data-slick="{&quot;count&quot;:4,&quot;total&quot;:4,&quot;autoplay&quot;:true,&quot;arrows&quot;:false,&quot;centerMode&quot;:true,&quot;lazyLoad&quot;:&quot;blazy&quot;,&quot;slidesToShow&quot;:3,&quot;responsive&quot;:[{&quot;breakpoint&quot;:600,&quot;settings&quot;:{&quot;autoplay&quot;:true,&quot;pauseOnHover&quot;:false,&quot;pauseOnFocus&quot;:false,&quot;arrows&quot;:false,&quot;centerMode&quot;:true,&quot;draggable&quot;:false,&quot;swipeToSlide&quot;:true,&quot;touchMove&quot;:false,&quot;waitForAnimate&quot;:false}}]}" class="slick__slider">  <div class="slick__slide slide slide--0"><div class="wrapper">
-<div class="image">  <a href="/blogs/tips-how-make-your-mattress-last-longer" hreflang="en"><img loading="lazy" src="/sites/default/files/blogs/Matress%20Last%20Longer.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="desc">Investing in a good mattress is one of the best decisions you can make for your health and well-being.</div>
-</div></div>
-  <div class="slick__slide slide slide--1"><div class="wrapper">
-<div class="image">  <a href="/blogs/how-choose-right-furniture-your-small-space" hreflang="en"><img loading="lazy" src="/sites/default/files/blogs/Your%20Small%20Space.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="desc">Furnishing your home can be challenging in small spaces, however, with the right approach and mindful selection of furniture, you can transform your compact area into a cozy, functional, and stylish retreat.</div>
-</div></div>
-  <div class="slick__slide slide slide--2"><div class="wrapper">
-<div class="image">  <a href="/blogs/achieve-your-dream-space" hreflang="en"><img loading="lazy" src="/sites/default/files/blogs/Dream%20Space.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="desc">Your living space is your respite after a long day so having a bespoke sanctuary should allow you to relax and recharge.&nbsp;</div>
-</div></div>
-  <div class="slick__slide slide slide--3"><div class="wrapper">
-<div class="image">  <a href="/blogs/furniture-care-tips" hreflang="en"><img loading="lazy" src="/sites/default/files/blogs/FR%20Care.jpg" width="1000" height="1000" alt="" class="img-fluid" />
-</a>
-</div>
-<div class="desc">Your furniture anchors your home’s character and style as it provides the basis for your design and color theme.</div>
-</div></div>
-</div>
-          <nav role="navigation" class="slick__arrow">
-        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button><button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
-      </nav>
-    </div>
-
-    </div>
-  
-          </div>
-</div>
-
-  </div>
-<div id="block-furniture-bbsimplenewspopup" class="block block-block-content block-block-content6c84b702-1fcb-4cad-a76c-eee7fda8cd95">
-  
-    
-      
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="wrapper"><a>Subscribe To Mailing List</a></div></div>
-      
-  </div>
-<div class="simplenews-subscriptions-block-01029058-b767-4cbd-96a7-bbda3c99d48f simplenews-subscriber-form block block-simplenews block-simplenews-subscription-block" data-drupal-selector="simplenews-subscriptions-block-01029058-b767-4cbd-96a7-bbda3c99d48f" id="block-furniture-simplenewssubscription-2">
-  
-    
-      <form data-block="content" action="/" method="post" id="simplenews-subscriptions-block-01029058-b767-4cbd-96a7-bbda3c99d48f" accept-charset="UTF-8">
-  <div class="field--type-email field--name-mail field--widget-email-default js-form-wrapper form-wrapper" data-drupal-selector="edit-mail-wrapper" id="edit-mail-wrapper">      <div class="js-form-item form-item js-form-type-email form-type-email js-form-item-mail-0-value form-item-mail-0-value">
-      <label for="edit-mail-0-value" class="js-form-required form-required">Email</label>
-        
-  <input data-drupal-selector="edit-mail-0-value" aria-describedby="edit-mail-0-value--description" type="email" id="edit-mail-0-value" name="mail[0][value]" value="" size="60" maxlength="254" placeholder="" class="form-email required form-control" required="required" aria-required="true" />
-
-
-            <div id="edit-mail-0-value--description" class="description">
-      The subscriber's email address.
-    </div>
-  </div>
-
-  </div>
-<div class="field--type-entity-reference field--name-subscriptions field--widget-simplenews-subscription-select js-form-wrapper form-wrapper" data-drupal-selector="edit-subscriptions-wrapper" id="edit-subscriptions-wrapper"></div>
-<div id="edit-message" class="js-form-item form-item js-form-type-item form-type-item js-form-item-message form-item-message form-no-label">
-        Stay informed - subscribe to our newsletter.
-        </div>
-
-  <input autocomplete="off" data-drupal-selector="form-0omqqbf2iztmqkdt76ycfd5z75itcz3shl0p65lt99a" type="hidden" name="form_build_id" value="form-0OMqQBF2IzTMQKdT76yCfD5Z75ITcZ3ShL0P65lT99A" />
-
-
-  <input data-drupal-selector="edit-simplenews-subscriptions-block-01029058-b767-4cbd-96a7-bbda3c99d48f" type="hidden" name="form_id" value="simplenews_subscriptions_block_01029058-b767-4cbd-96a7-bbda3c99d48f" />
-
-<div class="field--type-datetime field--name-field-birthday field--widget-datetime-default js-form-wrapper form-wrapper" data-drupal-selector="edit-field-birthday-wrapper" id="edit-field-birthday-wrapper">        <h4 class="label js-form-required form-required">Birthday</h4>
-<div id="edit-field-birthday-0-value" data-drupal-field-elements="date" class="form-inline container-inline">
-  <div class="js-form-item form-item js-form-type-date form-type-date js-form-item-field-birthday-0-value-date form-item-field-birthday-0-value-date form-no-label">
-      <label for="edit-field-birthday-0-value-date" class="visually-hidden js-form-required form-required">Date</label>
-        
-  <input data-drupal-selector="edit-field-birthday-0-value-date" type="date" placeholder="YYYY-MM-DD" data-help="Enter the date using the format YYYY-MM-DD (e.g., 2025-06-16)." id="edit-field-birthday-0-value-date" name="field_birthday[0][value][date]" value="" size="12" class="form-date required form-control" required="required" aria-required="true" />
-
-
-        </div>
-
-</div>
-
-
-  </div>
-<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2">
-    <input data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Subscribe" class="button button--primary js-form-submit form-submit btn btn-primary" />
-
-</div>
-
-</form>
-
-  </div>
-
-  </div>
-
-              </section>
-
-                  
-      </div>
-      
-      
-    </div>
-  </div>
-
-
-      <footer id="footer" class="footer container" role="contentinfo">
-            <div class="footer-wrapper">
-            <div class="footer-top">
-                <div class="ft-wrapper">
-                    
-                                                <div class="fn1-sec">
-                              <div class="region region-footer-top-fn1">
-    <nav role="navigation" aria-labelledby="block-furniture-company-menu" id="block-furniture-company" class="block block-menu navigation menu--company">
-      
-  <h5 id="block-furniture-company-menu">Company</h5>
-  
-
-        
-
-            <ul>
-                      <li class="nav-item">
-                    <a href="/about-us" data-bs-toggle="dropdown" aria-expanded="false" data-drupal-link-system-path="about-us">About Us</a>
-                  </li>
-                      <li class="nav-item">
-                    <a href="/faqs" data-bs-toggle="dropdown" aria-expanded="false" data-drupal-link-system-path="faqs">FAQs</a>
-                  </li>
-                </ul>
-  
-
+      <li><a href="#">Contact Us</a></li>
+    </ul>
   </nav>
 
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>We Make Spaces Beautiful</h2>
+    <p>Crafted furniture that fits your life</p>
+  </section>
 
-                        </div>
-                                                                        <div class="fn2-sec">
-                              <div class="region region-footer-top-fn2">
-    <nav role="navigation" aria-labelledby="block-furniture-storelocation-menu" id="block-furniture-storelocation" class="block block-menu navigation menu--store-location">
-      
-  <h5 id="block-furniture-storelocation-menu">Store Location</h5>
-  
-
-        
-
-            <ul>
-                      <li class="nav-item">
-                    <a href="/store-locator/showroom" data-bs-toggle="dropdown" aria-expanded="false" data-drupal-link-system-path="store-locator/showroom">Showroom</a>
-                  </li>
-                      <li class="nav-item">
-                    <a href="/store-locator/mall-based" data-bs-toggle="dropdown" aria-expanded="false" data-drupal-link-system-path="store-locator/mall-based">Mall-Based</a>
-                  </li>
-                </ul>
-  
-
-  </nav>
-
-  </div>
-
-                        </div>
-                                                  
-                                                <div class="fn3-sec">
-                              <div class="region region-footer-top-fn3">
-    <div class="views-element-container block block-views block-views-blockfn3-contact-info-block-1" id="block-furniture-views-block-fn3-contact-info-block-1">
-  
-      <h2>Contact Info</h2>
-    
-      <div data-block="footer_top_fn3"><div class="view view-fn3-contact-info view-id-fn3_contact_info view-display-id-block_1 js-view-dom-id-c102002649c2ec4a7fe92e2656d97c8f6949d61b035cdc34825f228daa51a294">
-  
-    
-      
-      <div class="view-content">
-          <div class="contact"><div class="wrapper">
-<div class="contact-number">(02 )8899 9000</div>
-<div class="email-address">furniturerepublic.info@gmail.com</div>
-<div class="address"><p>1138 EDSA, Balintawak,&nbsp;<br>Quezon City, Philippines, 1106<br>&nbsp;</p></div>
-</div></div>
-
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="images/sofa.jpg" alt="Sofa Set" />
+      <img src="images/sofa.jpg" alt="Dining Table" />
+      <img src="images/sofa.jpg" alt="TV Unit" />
+      <img src="images/sofa.jpg" alt="Light and Decor" />
     </div>
-  
-          </div>
-</div>
+  </section>
 
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Furniture Republic Sri Lanka. All rights reserved.</p>
+  </footer>
 
-  </div>
-
-                        </div>
-                                                
-                                                <div class="fn4-sec">
-                              <div class="region region-footer-top-fn4">
-    <nav role="navigation" aria-labelledby="block-furniture-websitepolicies-menu" id="block-furniture-websitepolicies" class="block block-menu navigation menu--website-policies">
-      
-  <h5 id="block-furniture-websitepolicies-menu">Website Policies</h5>
-  
-
-        
-
-            <ul>
-                      <li class="nav-item">
-                    <a href="/basic-page/general-terms-and-condition" data-bs-toggle="dropdown" aria-expanded="false" data-drupal-link-system-path="node/50">Terms and Conditions</a>
-                  </li>
-                      <li class="nav-item">
-                    <a href="/basic-page/vip-terms-conditions" data-bs-toggle="dropdown" aria-expanded="false" data-drupal-link-system-path="node/51">VIP Terms and Conditions</a>
-                  </li>
-                </ul>
-  
-
-  </nav>
-
-  </div>
-
-                        </div>
-                                                
-                                                
-                    
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="fb-wrapper">
-                                              <div class="region region-footer-bottom-left">
-    <div id="block-furniture-bbcopyright" class="block block-block-content block-block-contentd560f0a9-6618-468a-a4af-a4072ef3a390">
-  
-    
-      
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>© 2024 Furniture Republic</p></div>
-      
-  </div>
-
-  </div>
-
-                                    </div>
-            </div>
-            
-        </div>
-    </footer>
-  
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxdkF1uAyEMhC_EwlPPExnWbNgavMWmKTl99q9p0pfRNzOWLI0nuHfnNzW7ukAgQkn09MQwnrgw9ZiIfm3lnARPVyGedEO_GM-sohWWD-dhO3rxTxxmGQgUt2d__UTsgQbRTqlMr01GEZhQTOCKbqxtAbIww88RpKJYyxrNXw1rt5FrPpqyElC6o4mtlqRtzZ50-fcw9tGFJsr5Igg1XM26R_h0u9og8uYzpGJHjNBI3wq9YkYjXRTzscF3wpu4XW3msRE-AAePlAQ","theme":"furniture","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/node?ajax_form=1":true},"ajax":{"edit-search-query":{"callback":"::updateSearchResults","event":"customSearchEvent","wrapper":"search-details-wrapper","url":"\/node?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"search_query"}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50,"validateDelay":25,"container":"","loader":true,"unblazy":false,"visibleClass":false},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"autoplaySpeed":3000,"pauseOnHover":true,"pauseOnDotsHover":false,"pauseOnFocus":true,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.34999999999999997779553950749686919152736663818359375,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"user":{"uid":0,"permissionsHash":"c843c4f171932e91fcf79bc87521a64d719376f1c9f51e3fb1797c36d240fd14"}}</script>
-<script src="/sites/default/files/js/js_wOvBYZnu9Fq5rMnpLorevL3iIlrm133yatTgoduk5U0.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=furniture&amp;include=eJxlkFFywyAMRC-EzVfPkxEgHBwBriSaktPHsT2ZuP3ZeauVGCHpopitA0HjalVRhuXrn88oAhOK8ZXRlsoZKD3OI28cZhkIFEU_84mqAxpEO6Uymdi4JG3ra2-6_Gn5SXgXu-mYa2iEJvZgfROt-SII7K_7QqkocgEa5--G3Me4Lrgngduy1mGGX-MIHt1uejBVCAculXpMRIf1BCKUXl_YY645vW6yOYZ40B3dYtZGf7Objl7k5PWKGU-VDKmMASM00ieKfJQE"></script>
-
-  </body>
+</body>
 </html>

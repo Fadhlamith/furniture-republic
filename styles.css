@@ -77,4 +77,39 @@ footer {
 
 .navbar ul li a:hover {
   color: #f0a500;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+.wa-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+:root {
+  --primary-bg: #2d3436;
+  --accent: #f0a500;
+}
+
+header {
+  background-color: var(--primary-bg);
 }
